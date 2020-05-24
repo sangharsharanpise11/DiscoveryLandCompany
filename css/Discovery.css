@@ -121,13 +121,14 @@ nav{
   }
   .para1, .para2, .para3{
     display: block;
-    height: 50px;
+    height: 65px;
+    align-items: center;
     width: 100%;
     font-family: 'Playfair Display', serif;
     text-align: center;
     position: relative;
     opacity: 1;
-    font-size: 36.8147px;
+    font-size: 47.8147px;
     transform: matrix(1, 0, 0, 1, 0, 0);
   }
   .unforgettableExperience{
@@ -154,3 +155,56 @@ nav{
         color: white;
         font-family: 'Quicksand', sans-serif;
       }
+.exclusiveWrapper{
+  display: flex;
+  justify-content: space-between;
+}
+.exclusiveCard{
+  padding: 0px 60px 150px 150px;
+  width: 100%;
+}
+img{
+  object-fit: cover;
+  background-color: #f3f3f3;
+  display: block;
+  border-style:none;
+  width: 95%;
+  height: 100%;
+}      
+.exclusiveInfo{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  width: 40%;
+  padding-top: 160px;
+  padding-bottom: 160px;
+}
+h{
+  font-size: 45px;
+  font-family: 'Playfair Display', serif;
+}
+.paragraph{
+  font-family: 'Padauk', sans-serif;
+  font-weight: 600;
+  font-size: 20px;
+  color: #777;
+  padding-top: 60px;
+
+}
+.paragraph p{
+  line-height: 2;
+  font-size: .9rem;
+}
+.p {
+  display: block;
+  text-align: start;
+  position: relative;
+  opacity: 1;
+  transform: matrix(1, 0, 0, 1, 0, 0);
+  height: 45px;
+  color: #777;
+}
+figure{
+  width: 50%;
+}
