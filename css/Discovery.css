@@ -168,7 +168,7 @@ img{
   background-color: #f3f3f3;
   display: block;
   border-style:none;
-  width: 95%;
+  width: 100%;
   height: 100%;
 }      
 .exclusiveInfo{
@@ -207,4 +207,125 @@ h{
 }
 figure{
   width: 50%;
+}
+.golf figure{
+  width: 100%;
+  margin: 0;
+    padding: 0;
+    position: static;
+    z-index: 1;
+}
+.tracking figure{
+  width: 100%;
+  margin: 0;
+    padding: 0;
+    position: static;
+    z-index: 1;
+  object-fit: cover;
+  background-color: #f3f3f3;
+}
+.threeImagesDataOwter{
+  background-color: ghostwhite;
+  height: fit-content;
+  width: 100%;
+}
+.threeImagesData{
+  width: 100%;
+  height: fit-content;
+  display: grid;
+  grid-row-gap: 3%;
+}
+article{
+  position: relative;
+  padding-top: 10%;
+  width: 80%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.shadow{
+  background-color: lightgray;
+  left: 30%;
+  position: absolute;
+  width: 75%;
+  height: 68%;
+  top: 38%;
+  z-index: 0;
+}
+.card{
+  padding: 8rem 6rem 5.5rem;
+  z-index: 2;
+  width: 45rem;
+  position: absolute;
+  left: 65%;
+  background: white;
+}
+.card-text{
+  font-size: 22px;
+  font-family: 'Padauk', sans-serif;
+  padding-top: 20px;
+}
+.card-body{
+  display: grids;
+}
+h5{
+  margin-bottom: 1.5rem;
+  line-height: 1.4;
+  font-size: 55px;
+  font-family: 'Nanum Myeongjo', serif;
+  font-family: gt-sectra;
+    font-weight: 200;
+    margin: 0;
+    padding: 0;
+}
+p{
+  line-height: 2;
+  font-size: .9rem;
+  margin: 0;
+  padding: 0;
+}
+.button {
+  background-color: white; /* Green */
+  border: none;
+  color: black;
+  padding: 15px 32px;
+  text-align: center;
+  border:ridge;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 30px;
+  margin: 35px 0px;
+  width: 300px;
+  height: 100px;
+  cursor: pointer;
+}
+.tracking article{
+  position: relative;
+  float: right;
+    padding-top: 10%;
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.tracking .shadow{
+  background-color: lightgray;
+  position: absolute;
+  width: 75%;
+  height: 68%;
+  top: 38%;
+  z-index: 0;
+  left: -5%;
+}
+.tracking .card{
+  padding: 8rem 6rem 5.5rem;
+  z-index: 2;
+  width: 45rem;
+  position: absolute;
+  left: -19%;
+  background: white;
+  right: 139%;
+}
+.footerData{
+  display: grid;
 }
