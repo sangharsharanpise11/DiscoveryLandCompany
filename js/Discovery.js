@@ -3,5 +3,9 @@ function myFunction(x) {
     x.classList.toggle("change");
   }
 
-  console.log("hiiiiiiiiiiii");
+  $(document).ready(function(){
+    $("#flip").click(function(){
+      $("#panel").slideToggle("slow");
+    });
+  });
   
