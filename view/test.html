@@ -1,53 +1,95 @@
 <!DOCTYPE html>
-<html>
+  <html>
     <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+       <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
        <title></title>
     </head>
+    
      <style>
-            .section {
-            position: relative;
-            width: 100%;
-            height: 100vh;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            overflow: hidden;
-            }
-            
-            .section h1 {
-            text-align: center;
-            font-size: 6rem;
-            font-family: "Cookie";
-            padding: 20px;
-            margin: 15px;
-            z-index: 1;
-            opacity: 0.7;
-            }
-            
-            .video-container {
-            position: absolute;
-            top: 0;
-            left: 0;right: 0;
-            width: 100%;
-            }
-            
-     </style>
-    <body>
-        <div class="section">
+   .panelDivs{
+    display: flex;
+    padding-top: 5%;
+    justify-content: space-around;
+    }
+   #panel{
+       background-color: grey;
+   }  
+   .close{
+    border: none;
+    font-size: 60px;
+    color: white;
+    background: transparent;
+   }
+  .list ul{
+    margin: 0;
+    padding: 0;
+    display: grid;
+    position: relative;
+    font-family: 'Playfair Display', serif;
+    justify-content: space-evenly;
+    width: -webkit-fill-available;
+    list-style-type: none;
+}
+.list ul li{
+       display: inline-block;
+ }
+.list ul li a{
+    text-decoration: none;
+    color: white;
+    font-family: inherit;
+    font-size: 70px;
+    font-weight: lighter;
+    padding: 0 20px;
+    position: relative;
+    line-height: 1.5;
+    display: block;
+}
+.list .cool-link::after  {
+  content: '';
+  display: block;
+  width: 0;
+  height: 2px;
+  background: #fff;
+  transition: width .3s
+}
 
-            <h1>Welcome To Paradise</h1>
-        
-            <div class="video-container">
-                <video autoplay loop muted>
-                    <source src="/images/Experiences-mobile.mp4" type="video/mp4">
-                </video>
+.list .cool-link:hover::after {
+    width: 100%;
+    transition: width .3s;
+}       
+     </style>
+ 
+
+    <body>
+        <div id="panel">
+            <div class="panelDivs">
+               <div class="logo">
+                 <img src="/images/images.png">
+               </div>
+
+               <div class="list">
+                 <ul>
+                   <li><a href="#" class="cool-link">Magazine</a></li>
+                   <li><a href="#" class="cool-link">News and Press</a></li>
+                   <li><a href="#" class="cool-link">Foundation</a></li>
+                   <li><a href="#" class="cool-link">Careers</a></li>
+                   <li><a href="#" class="cool-link">Contact</a></li>
+                 </ul>
+               </div>
+
+               <div class="crossBtn">
+                 <button type="button" class="close" aria-label="Close">
+                   <span aria-hidden="true">&times;</span>
+                 </button>
+               </div>
             </div>
-        
-        </div>
-        <div style="height:400px;width:100%">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat quod soluta natus. Magni tempora animi illo ea accusamus ex deserunt odio facere deleniti molestiae qui eaque in illum praesentium sunt iste accusantium nobis repellat aspernatur alias, architecto consectetur voluptate dolore! Saepe, enim rem nam dolorem tempore blanditiis perspiciatis repellat architecto.</p>
-        </div>
-        
-       
+          </div> 
+
+
+          <script src="/js/Discovery.js"></script>
+
     </body>
+    
 </html>

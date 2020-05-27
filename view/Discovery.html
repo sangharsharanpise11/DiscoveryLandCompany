@@ -4,6 +4,7 @@
         <title>DiscoveryLandCompany</title>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
         <link rel="stylesheet" href="/css/Discovery.css">
@@ -17,11 +18,38 @@
 
   <body>
     <div class="main">
+      <div id="panel" style="display: none;">
+        <header>
+          <div class="logo">
+            <img src="/images/images.png">
+          </div>
+  
+           <div class="list">
+             <ul>
+               <li><a href="#" class="cool-link">Magazine</a></li>
+               <li><a href="#" class="cool-link">News and Press</a></li>
+               <li><a href="#" class="cool-link">Foundation</a></li>
+               <li><a href="#" class="cool-link">Careers</a></li>
+               <li><a href="#" class="cool-link">Contact</a></li>
+             </ul>
+           </div>
+  
+           <div id="crossBtn">
+             <button type="button" class="close" aria-label="Close">
+               <span aria-hidden="true">&times;</span>
+               <!-- <i class="fa fa-close" style="font-size:36px"></i> -->
+             </button>
+           </div>
+        </header>
+    </div>
+
+
       <div class="outerBody">
         <header>
           <div class="logo">
             <img src="/images/images.png">
           </div>
+          
           <nav class="navbar navbar-inverse">
             <ul>
               <li><a href="#" class="cool-link">What we do</a></li>
@@ -31,15 +59,14 @@
               <li><a href="#" class="cool-link">Contact</a></li>
             </ul>
            <div id="flip">
-              <div class="container" onclick="myFunction(this)">
+              <div class="container" >
                 <div class="bar1"></div>
                 <div class="bar2"></div>
                 <div class="bar3"></div>
               </div>
-           </div>
-           <div id="panel">Hello world!</div>
-
-          </nav>
+           </div> 
+           
+                     </nav>
       </header>
       <div class="unforgettableExperience">
         <div class="unforget">Unforgettable</div>
@@ -50,7 +77,7 @@
       </div>
     </div>
      <section class="video-container">
-            <video autoplay loop class="video-background"  height="500" muted plays-inline>
+            <video autoplay loop class="video-background"  muted plays-inline>
               <source src="/images/Experiences-mobile.mp4" type="video/mp4">
             </video>
       </section>
@@ -62,12 +89,19 @@
           <div class="para3">with the people closest to you.</div> 
         </p>
      </div>
+
+     <div class="firstParagraph">
+          Memorable days. Exceptional nights. We believe it’s our mission to
+          make every minute matter. So you can live your life to the fullest,
+          with the people closest to you.
+     </div>
+     
     <div class="exclusiveCard">
       <div class="exclusiveWrapper">
         <div class="exclusiveInfo">
           <h>Exclusive to <br> your world</h>
           <div class="paragraph">
-             <p>   
+             <p id="longDevice">   
               <div class="p">Our worlds are designed to offer you endless</div> 
               <div class="p">opportunities to share incredible once-in-a-lifetime</div> 
               <div class="p">experiences and adventures every single minute of the </div>
@@ -79,6 +113,13 @@
               <div class="p"> cherished times, together with those who matter most.</div>
             </p>  
           </div>
+          <p id="mobileView" >
+            Our worlds are designed to offer you endless opportunities to share incredible once-in-a-lifetime
+            experiences and adventures every single minute of the  day. Each of our settings offers a relaxed sense of
+            community through exceptional clubhouses, world-class golf courses, welcoming staff and an
+            extensive Outdoor Pursuits program. Create moments of joy and wonder, unforgettable memories and
+            cherished times, together with those who matter most.
+          </p>
         </div>
         <figure class="waterImage">
           <img src="/images/water.jpg" alt="waterImage" >
@@ -136,7 +177,7 @@
          </article>
         </div>
 
-        <div class="golf">
+        <div class="golf1">
           <article>
             <div class="shadow"></div>
               <figure>
@@ -162,7 +203,7 @@
       </div>
     </div>
 
-    <div class="footerData">
+   <div class="footerData">
       <section>
           <figure>
               <div class="ourWorld">

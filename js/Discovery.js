@@ -1,11 +1,21 @@
-function myFunction(x) {
-  console.log("hi in x");
-    x.classList.toggle("change");
-  }
-
   $(document).ready(function(){
     $("#flip").click(function(){
-      $("#panel").slideToggle("slow");
+      $(".outerBody").hide();
+      $("#panel").slideDown("slow");
     });
   });
   
+  $(document).ready(function(){
+    $("#crossBtn").click(function(){
+      console.log("in close btn");
+      $("#panel").slideUp("slow");
+    });
+  });
+
+  $("#crossBtn").on('click', function () {
+    console.log("in close btn");
+    //$("#panel").slideUp("slow");
+  });
+
+  console.log("current window width ",$(window).width());
+  console.log("current document width ",$(document).width());
