@@ -2121,4 +2121,14 @@ display: grid;
 height: fit-content;
 width: 100%;margin-top: 0;
 }
+.list ul li a {
+  text-decoration: none;
+  color: white;
+  font-family: inherit;
+  font-size: 58px;
+  font-weight: lighter;
+  position: relative;
+  line-height: 1.5;
+  display: block;
+}
 }
