@@ -432,6 +432,7 @@ h1{
 }
 #mobileView{
   display: none;
+  
 }
 /********** slide toggle *****************/
 #panel header{
@@ -646,14 +647,15 @@ img{
 #mobileView{
   display: block;
   opacity: 1;
-  font-family: 'Padauk', sans-serif;
-  font-weight: 500;
+  font-family: 'Karla', sans-serif;
+    font-weight: 500;
     transform: matrix(1, 0, 0, 1, 0, 0);
     color: #777;
     line-height: 2;
-    font-size: 13px;
+    font-size: 16px;
     margin: 0;
     padding: 0;
+    font-weight: 100;
     margin-top: 8%;
 }
 .shadow ,.tracking .shadow{
@@ -962,8 +964,8 @@ figure{
 #mobileView{
   display: block;
   opacity: 1;
-  font-family: 'Padauk', sans-serif;
-  font-weight: 500;
+  font-family: 'Karla', sans-serif;
+    font-weight: 500;
     transform: matrix(1, 0, 0, 1, 0, 0);
     color: #777;
     line-height: 2;
@@ -1323,11 +1325,11 @@ figure{
 #mobileView{
   display: block;
   opacity: 1;
-  font-family: 'Padauk', sans-serif;
-  transform: matrix(1, 0, 0, 1, 0, 0);
+  font-family: 'Karla', sans-serif;
+    transform: matrix(1, 0, 0, 1, 0, 0);
   color: #777;
   line-height: 2;
-  font-size: 15px;
+  font-size: 16px;
   margin: 0;
   padding: 0;
   margin-top: 8%;
@@ -1641,11 +1643,11 @@ h1 {
   #mobileView{
   display: block;
   opacity: 1;
-  font-family: 'Padauk', sans-serif;
+  font-family: 'Karla', sans-serif;
   transform: matrix(1, 0, 0, 1, 0, 0);
   color: #777;
   line-height: 2;
-  font-size: 15px;
+  font-size: 16px;
   margin: 0;
   padding: 0;
   margin-top: 8%;
@@ -1726,3 +1728,179 @@ h {
   width: 100%;margin-top: 0;
 }
   }
+
+/* *************** (max-width : 1180px) ******************* */
+@media screen and (min-width: 1025px) and (max-width:1180px){
+  .video-container{
+    min-height: 100vh;
+    display: flex;
+  }
+  .video-background{
+    min-height: 100%;
+    object-fit: fill;
+    width: 100%;
+    z-index: -1;
+    min-width: 100%;
+  }
+  .outerBody {
+    padding-left: 40px;
+    padding-right: 40px;
+    position: absolute;
+    width: 100%;
+    height: fit-content;
+    display: grid;
+}
+ul{
+  display: none;
+}
+header {
+  width: 100%;
+  transform: translate3d(0px, 0px, 0px);
+  height: 135px;
+  z-index: 1000;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.unforgettableExperience {
+  display: flex;
+  flex-direction: column;
+  color: white;
+  padding-right: 15%;
+  padding-left: 13%;
+  width: 683px;
+  height: fit-content;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-67%, -50%);
+}
+.scroll{
+  display: none;
+}
+.unforget {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 60px;
+  transform: translate3d(0px, -10px, 0px);
+}
+.experience {
+  font-family: 'Darker Grotesque', sans-serif;
+    font-size: 65px;
+    transform: translate3d(0px, -40px, 0px);
+}
+.para {
+  padding: 50px 50px 50px 50px;
+}
+.para1, .para2, .para3 {
+  display: block;
+  height: 60px;
+  align-items: center;
+  width: 100%;
+  font-family: 'Playfair Display', serif;
+  text-align: center;
+  position: relative;
+  opacity: 1;
+  font-size: 22.8147px;
+  transform: matrix(1, 0, 0, 1, 0, 0);
+}
+.para{display: none;}
+.firstParagraph{
+  display: block;
+  padding: 110px 75px 110px 75px;
+  font-size: 37px;
+  line-height: 1.3;
+  text-align: center;
+}
+.exclusiveCard {
+  padding: 0px 60px 0px 60px;
+  width: 100%;margin-bottom: 10%;
+}
+.paragraph{display: none;}
+#mobileView{
+display: block;
+opacity: 1;
+font-family: 'Karla', sans-serif;
+transform: matrix(1, 0, 0, 1, 0, 0);
+color: #777;
+line-height: 2;
+font-size: 17px;
+margin: 0;
+padding: 0;
+margin-top: 8%;
+}
+h {
+font-size: 30px;
+font-family: 'Playfair Display', serif;
+}
+.threeImagesDataOwter {
+  background-color: ghostwhite;
+  height: fit-content;
+  width: 100%;
+}
+.card {
+z-index: 2;
+width: 35rem;
+padding: 35px 35px 35px 35px;
+height: 28rem;
+position: absolute;
+left: 50%;
+background: white;
+}
+.card-text {
+font-size: 16px;
+font-family: 'Padauk', sans-serif;
+padding-top: 20px;
+}
+.button {
+background-color: white;
+color: black;
+padding: 15px 32px;
+text-align: center;
+border: ridge;
+text-decoration: none;
+display: inline-block;
+font-size: 17px;
+margin: 35px 0px;
+width: 210px;
+height: 65px;
+cursor: pointer;
+}
+.tracking .card{
+z-index: 2;
+width: 35rem;
+padding: 35px 35px 35px 35px;
+height: 28rem;
+position: absolute;
+right: 50%;
+background: white;
+}
+.tracking .shadow {
+background-color: lightgray;
+position: absolute;
+width: 86%;
+height: 68%;
+top: 39%;
+z-index: 0;
+left: -6%;
+}
+.shadow {
+background-color: lightgray;
+  left: 19%;
+  position: absolute;
+  width: 87%;
+  height: 70%;
+  top: 37%;
+  z-index: 0;
+}
+.golf , .tracking{
+margin-bottom: 7%;
+}
+.golf1{
+  margin-bottom: 20%;
+}
+.footerData {
+display: grid;
+height: fit-content;
+width: 100%;margin-top: 0;
+}
+}
