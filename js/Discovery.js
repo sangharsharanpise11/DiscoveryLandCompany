@@ -5,13 +5,6 @@
     });
   });
   
-  // $(document).ready(function(){
-  //   $("#crossBtn").click(function(){
-  //     console.log("in close btn 1");
-  //     $("#panel").slideUp("slow");
-  //   });
-  // });
-
   $("#crossBtn").on('click', function () {
     console.log("in close btn 2");
     $("#panel").slideUp("slow");
