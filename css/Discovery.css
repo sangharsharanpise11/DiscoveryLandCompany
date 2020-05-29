@@ -11,6 +11,14 @@ body{
   margin: 0;
   overflow: hidden;
 }
+.listNew{
+  display: none;
+}
+#crossBtn{
+  right: 0;
+  top: 75px;
+  position: absolute;
+}
 .outerBody{
   padding-left: 40px;
     padding-right: 40px;
@@ -322,7 +330,8 @@ float: right;
   align-items: center;
 }
 .tracking .shadow{
-background-color: lightgray;
+  background-color: grey; /* For browsers that do not support gradients */
+  background-image: linear-gradient(-90deg, grey, lightgrey);
 position: absolute;
 width: 75%;
 height: 68%;
@@ -508,6 +517,30 @@ object-fit: cover;
 
 /********** media query started **************************************/
 @media screen and (max-width : 320px){
+  .list ul li a {
+    text-decoration: none;
+    color: white;
+    font-family: inherit;
+    font-size: 30px;
+    font-weight: lighter;
+    padding: 0px 20px;
+    position: relative;
+    line-height: 1;
+    display: block;
+}
+#panel header {
+  padding-bottom: 2px;
+  display: flex;
+  flex-direction: column;
+  padding-top: 27%;
+  width: 100%;
+  height: fit-content;
+  align-items: baseline;
+  justify-content: space-around;
+}
+.list{
+  margin-top: 15px;
+}
   ul{display: none;}
   .unforget {
     font-family: 'Cormorant Garamond', serif;
@@ -581,8 +614,8 @@ object-fit: cover;
     padding: 2px;
   }
   .shadow ,.tracking .shadow{
-    background-color: lightgray;
-    left: 3%;
+    background-color: grey; /* For browsers that do not support gradients */
+    background-image: linear-gradient(-90deg, grey, lightgrey);    left: 3%;
     position: absolute;
     width: 94%;
     height: 75%;
@@ -748,72 +781,337 @@ object-fit: cover;
   padding: 50px 50px 50px 50px;
   font-size: 22px;
   }
-  
 }
 
-/* @media screen and(min-width :321px) and (max-width :425px){
-  .unforgettableExperience {
-    display: flex;
-    flex-direction: column;
+@media screen and (min-width: 321px) and (max-width: 425px){
+  .list ul li a {
+    text-decoration: none;
     color: white;
-    padding-right: 15%;
-    width: 405px;
+    font-family: inherit;
+    font-size: 30px;
+    font-weight: lighter;
+    padding: 0px 20px;
     position: relative;
-    height: fit-content;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-60%, -50%);
-    padding-left: 22%;
+    line-height: 1;
+    display: block;
 }
-.tracking img, .golf img {
-  top: 0;
-  left: 0;
-  width: 88%;
-  height: 100%;
-  object-fit: cover;
-  background-color: #f3f3f3;
-  display: block;
-}
-.waterImage {
-  order: -1;
-  max-width: 35rem;
-  height: 100vw;
+#panel header {
+  padding-bottom: 2px;
+  display: flex;
+  flex-direction: column;
+  padding-top: 27%;
   width: 100%;
-  position: relative;
-  margin-left: 0px;
+  height: fit-content;
+  align-items: baseline;
+  justify-content: space-around;
+}
+.list{
+  margin-top: 15px;
+}
+#crossBtn {
+  right: 0;
+  top: 107px;
+  position: absolute;
+}
+  ul{display: none;}
+  .unforget {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 35px;
+    padding-bottom: 6%;
+    transform: translate3d(0px, -10px, 0px);
+}
+.unforgettableExperience {
+  display: flex;
+  flex-direction: column;
+  color: white;
+  width: 260px;padding-left: 0;
+  height: fit-content;
+  margin-top: -35%;
+}
+.experience {
+  font-family: 'Darker Grotesque', sans-serif;
+  font-size: 43px;
+  transform: translate3d(0px, -40px, 0px);
+}
+.scroll{
+  display: none;
+}
+.para{
+  display: none;
 }
 .firstParagraph {
   display: block;
-  padding: 60px 50px 60px 50px;
-  font-size: 25px;
+  padding: 50px 40px 50px 40px;
+  font-size: 22px;
 }
-.exclusiveInfo {
+.exclusiveCard {
+  padding: 0px 18px 30px 20px;
+  width: 100%;
+  }
+  .exclusiveWrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  h {
+    font-size: 25px;
+    font-family: 'Playfair Display', serif;
+   }
+   .paragraph{
+     display: none;
+   }
+   #mobileView {
+    display: block;
+    line-height: 1.5;
+    font-size: .9rem;
+    margin: 0;margin-top: 8%;
+    padding: 0;
+    font-family: 'Karla', sans-serif;
+}
+  .waterImage {
+    order: -1;
+    max-width: 35rem;
+    height: 100vw;
+    width: 100%;
+    position: relative;
+    margin-left: 0px;
+  }
+  .exclusiveInfo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding-bottom: 160px;
+    width: 100%;
+    padding: 30px;
+  }
+  .shadow ,.tracking .shadow{
+    background-color: grey; /* For browsers that do not support gradients */
+    background-image: linear-gradient(-90deg, grey, lightgrey);    left: 12px;
+    position: absolute;
+    width: 400px;
+    height: 75%;
+    top: 70%;
+    z-index: 0;
+    }
+    .golf, .tracking{
+    margin-bottom: 75%;
+    }
+    .golf1 {
+      margin-bottom: 75vh;
+   }
+    .threeImagesData {
+    width: 100%;
+    height: fit-content;
+    display: grid;
+    }
+    .golf figure, .golf1 figure {
+      margin: 0;
+      width: 418px;
+      height: 45vh;
+      padding: 10px;
+      position: static;
+      z-index: 1;
+      margin-left: 3px;
+    }
+    .tracking figure{
+      margin: 0;
+      width: 486px;
+      height: 45vh;
+      padding: 10px;
+      position: static;
+      z-index: 1;
+      margin-left: 3px;
+    }
+    article {
+      position: relative;
+      padding-top: 6%;
+      width: 100%;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+    }
+    .ourWorld .button {
+      background-color: transparent;
+      border: none;
+      color: white;
+      padding: 15px 32px;
+      text-align: center;
+      border: 1px solid #777;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 13px;
+      margin: 1px 0px;
+      width: 140px;
+      height: 50px;
+      cursor: pointer;
+  }
+    .tracking article {
+      position: relative;
+      padding-top: 0%;
+      width: 86%;
+      display: flex;float: none;
+      flex-direction: row;
+      align-items: center;
+  }
+    .card-text, .tracking .card-text, .golf .card-text {
+      font-size: 15px;
+      font-family: 'Padauk', sans-serif;
+      padding-top: 20px;
+      width: 320px;
+      color: #777;
+      }
+      p {
+        line-height: 1.5;
+        margin: 0;
+        padding: 0;
+    }
+    .card, .tracking .card , .golf .card{
+      padding: 0rem 2rem 1.5rem;
+      z-index: 2;
+      width: 24rem;
+      top: 85%;
+      position: absolute;
+      left: 4%;
+      background: white;
+    }
+    h5 {
+      margin-bottom: 1.5rem;
+      line-height: 1.4;
+      font-size: 25px;
+      font-family: gt-sectra;
+      font-weight: 200;
+      margin: 0;    margin-top: 10%;
+      padding: 0;
+  }
+  .button {
+    background-color: white;
+    border: none;
+    color: black;
+    padding: 15px 32px;
+    text-align: center;
+    border: 1px solid #777;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 13px;
+    margin: 35px 0px;
+    width: 140px;
+    height: 50px;
+    cursor: pointer;
+}
+.footerData {
+  display: grid;
+  margin-top: 0;
+  height: fit-content;
+  width: 100%;
+  }
+  .footerData figure {
+  width: 100%;
+  margin: 0;
+  height: 45vh;
+  padding: 0;
+  position: relative;
+  z-index: 1;
+  object-fit: cover;
+  background-color: #f3f3f3;
+  }
+  footer{
+  width: 100%;
+  background-color: #161F1E;
+  }
+  .footer{
+  padding: 0;
+    height: 450px;
+  }
+  .footerInfo {
+  margin-left: 20px;
+  margin-top: 20px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
-  padding-bottom: 160px;
-  width: 100%;
-  padding: 15px;
-}
-#mobileView {
-  display: block;
-  opacity: 1;
-  font-family: 'Karla', sans-serif;
-  font-weight: 500;
-  transform: matrix(1, 0, 0, 1, 0, 0);
-  color: #777;
-  line-height: 1.5;
-  font-size: 13px;
+  }
+  .footerNav {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-around;
+  pointer-events: all;
+  position: relative;
+  z-index: 2;
+  color: white;
+  }
+  .inTouch {
+  height: 0px;
+  }
+  .company ul, .inTouch ul {
+  flex-direction: column;
+  line-height: 2;
+  margin-bottom: .35rem;
+  font-size: 15px;
   margin: 0;
   padding: 0;
+  display: flex;
+  font-family: 'NTR', sans-serif;
+  list-style-type: none;
+  }
+  .last {
+  padding: 0px 25px 35px 25px;
+  }
+  .last p {
+    line-height: 2;
+    font-size: 12px;
+    color: white;
+    padding: 0;
+    height: 50px;
+    align-items: center;
+  }
+  h1 {
+  font-size: 25px;
   font-weight: 100;
-  margin-top: 8%;
+  }
+  .para{
+  display: none;
+  }
+  .firstParagraph{
+  display: block;
+  padding: 50px 50px 50px 50px;
+  font-size: 22px;
+  }
 }
+
+/* **************(min-width: 321px) and (max-width: 425px)****************/
+@media screen and (min-width: 426px) and (max-width: 480px){
+  .list ul li a {
+    text-decoration: none;
+    color: white;
+    font-family: inherit;
+    font-size: 30px;
+    font-weight: lighter;
+    padding: 0px 20px;
+    position: relative;
+    line-height: 1;
+    display: block;
 }
-@media screen and (min-width :426) and (max-width :480px){
-.video-container{
+#panel header {
+  padding-bottom: 2px;
+  display: flex;
+  flex-direction: column;
+  padding-top: 27%;
+  width: 100%;
+  height: fit-content;
+  align-items: baseline;
+  justify-content: space-around;
+}
+.list{
+  margin-top: 15px;
+}
+#crossBtn {
+  right: 0;
+  top: 107px;
+  position: absolute;
+}
+  .video-container{
   min-height: 100vh;
   display: flex;
 }
@@ -1138,11 +1436,39 @@ display: block;
 padding: 50px 50px 50px 50px;
 font-size: 22px;
 }
-} */
+}
 
 /************************* mrdia query for 768 *******************************************************/
 @media screen and (min-width: 481px) and (max-width:768px){
-
+  .list ul li a {
+    text-decoration: none;
+    color: white;
+    font-family: inherit;
+    font-size: 30px;
+    font-weight: lighter;
+    padding: 0px 20px;
+    position: relative;
+    line-height: 1;
+    display: block;
+}
+#panel header {
+  padding-bottom: 2px;
+    display: flex;
+    flex-direction: column;
+    padding-top: 15%;
+    width: 100%;
+    height: fit-content;
+    align-items: baseline;
+    justify-content: space-around;
+}
+.list{
+  margin-top: 15px;
+}
+#crossBtn {
+  right: 0;
+  top: 107px;
+  position: absolute;
+}
 .video-container{
   min-height: 100vh;
   display: flex;
@@ -2008,8 +2334,8 @@ right: 50%;
 background: white;
 }
 .tracking .shadow {
-background-color: lightgray;
-position: absolute;
+  background-color: grey; /* For browsers that do not support gradients */
+  background-image: linear-gradient(-90deg, grey, lightgrey);position: absolute;
 width: 86%;
 height: 68%;
 top: 39%;
@@ -2184,8 +2510,8 @@ right: 50%;
 background: white;
 }
 .tracking .shadow {
-background-color: lightgray;
-position: absolute;
+  background-color: grey; /* For browsers that do not support gradients */
+  background-image: linear-gradient(-90deg, grey, lightgrey);position: absolute;
 width: 86%;
 height: 68%;
 top: 39%;
@@ -2402,8 +2728,8 @@ cursor: pointer;
   background: white;
 }
 .tracking .shadow {
-  background-color: lightgray;
-  position: absolute;
+  background-color: grey; /* For browsers that do not support gradients */
+  background-image: linear-gradient(-90deg, grey, lightgrey);  position: absolute;
   width: 78%;
   height: 68%;
   top: 39%;
