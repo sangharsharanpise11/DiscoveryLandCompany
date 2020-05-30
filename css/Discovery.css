@@ -155,17 +155,28 @@ video{
   font-size: 70px;
   height: fit-content;
   padding-left: 15%;
+  
 }
 .unforget{
   font-family: 'Cormorant Garamond', serif;
   font-size: 150px;
   transform: translate3d(0px, -10px, 0px);
+  /* animation: Slide_Up 15s ease; */
 }
 .experience{
   font-family: 'Darker Grotesque', sans-serif;
   font-size: 75px;
   transform: translate3d(0px, -40px, 0px);
+  /* animation: Slide_Up 15s ease; */
     }
+ @keyframes Slide_Up{
+   0%{
+     transform: translateY(150px);
+   }
+   100%{
+     transform: translateY(0);
+   }
+ }   
 .scroll{
       color: white;
       font-family: 'Quicksand', sans-serif;
@@ -2765,5 +2776,8 @@ width: 100%;margin-top: 0;
   position: relative;
   line-height: 1.5;
   display: block;
+}
+.button:hover{
+  border: 1px solid red;
 }
 }

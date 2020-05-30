@@ -13,3 +13,9 @@
 
   console.log("current window width ",$(window).width());
   console.log("current document width ",$(document).width());
+
+  // $(".button").hover(function(){
+  //   $(this).css("border", "1px solid black");
+  //   }, function(){
+  //   $("span").css("transform", "translateY(-100%)");
+  // });
